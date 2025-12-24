@@ -77,13 +77,13 @@ Sentinel embodies key Ironcreed principles:
 
 ## Development
 
-```bash
-# Run with verbose logging
-python3 sentinel.py verify --verbose
+The tool is a self-contained Python script with no external dependencies, making it easy to audit and verify.
 
-# Run tests (when available)
-python3 -m pytest tests/
-```
+Future enhancements may include:
+- Unit tests with pytest
+- Configuration file support
+- Pattern-based file filtering
+- Email/webhook notifications
 
 ## Contributing
 

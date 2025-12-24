@@ -233,12 +233,6 @@ The watchful eye that never sleeps.
         help="Path to monitor (default: current directory)"
     )
     
-    parser.add_argument(
-        "--verbose",
-        action="store_true",
-        help="Enable verbose output"
-    )
-    
     args = parser.parse_args()
     
     try:
