@@ -1,0 +1,52 @@
+# Build artifacts and compiled code
+*.o
+*.a
+*.so
+*.exe
+*.dll
+*.dylib
+dist/
+build/
+target/
+bin/
+obj/
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Environment and secrets
+.env
+.env.local
+*.key
+*.pem
+secrets.yml
+
+# Test coverage
+coverage/
+*.coverage
+.coverage.*
+htmlcov/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
