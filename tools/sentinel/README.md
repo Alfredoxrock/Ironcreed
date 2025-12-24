@@ -12,7 +12,7 @@ Sentinel is a security-focused file integrity monitoring tool that watches over 
 - **Baseline snapshots** - Establish known-good states
 - **Change detection** - Identify modifications, additions, and deletions
 - **Audit logging** - Complete record of all scans and changes
-- **Configurable monitoring** - Watch specific files or directories
+- **Configurable monitoring** - Watch specific directories and their contents
 - **No dependencies** - Pure Python 3.6+ implementation
 
 ## Installation
@@ -36,39 +36,10 @@ python3 sentinel.py init /path/to/critical/files
 python3 sentinel.py verify
 ```
 
-### Update Baseline
-```bash
-# Update baseline after authorized changes
-python3 sentinel.py update
-```
-
 ### Show Status
 ```bash
 # Display current monitoring status
 python3 sentinel.py status
-```
-
-## Configuration
-
-Create `.sentinel.yml` in the monitored directory:
-
-```yaml
-# Files and directories to monitor
-watch:
-  - config/
-  - *.conf
-  - secrets/
-
-# Files to ignore
-ignore:
-  - "*.log"
-  - "*.tmp"
-  - .git/
-
-# Alert settings
-alerts:
-  on_change: true
-  log_file: sentinel.log
 ```
 
 ## Philosophy
