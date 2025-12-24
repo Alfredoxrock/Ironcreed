@@ -43,27 +43,35 @@ window.addEventListener('scroll', () => {
 // Form submission handler
 const contactForm = document.querySelector('.contact-form');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = contactForm.querySelector('input[type="text"]').value;
-    const email = contactForm.querySelector('input[type="email"]').value;
-    const message = contactForm.querySelector('textarea').value;
+    const name = contactForm.querySelector('input[type="text"]').value.trim();
+    const email = contactForm.querySelector('input[type="email"]').value.trim();
+    const message = contactForm.querySelector('textarea').value.trim();
 
-    // Simple validation
-    if (name && email && message) {
-        // Show success message (you can customize this)
-        alert('Thank you for your message! We will get back to you soon.');
-
-        // Reset form
-        contactForm.reset();
-
-        // In a real application, you would send this data to a server
-        console.log('Form submitted:', { name, email, message });
-    } else {
+    if (!name || !email || !message) {
         alert('Please fill in all fields.');
+        return;
+    }
+
+    try {
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message })
+        });
+
+        const data = await res.json();
+        if (data && data.ok) {
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        } else {
+            alert('There was a problem sending your message. Please try again later.');
+        }
+    } catch (err) {
+        console.error('Contact submit error:', err);
+        alert('Network error — please try again later.');
     }
 });
 

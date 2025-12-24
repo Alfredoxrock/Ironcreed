@@ -1,0 +1,12 @@
+{
+    "name": "ironcreed-site",
+    "version": "1.0.0",
+    "description": "Static site served by a small Express server for local development",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}

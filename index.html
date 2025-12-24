@@ -18,15 +18,15 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="32" height="32" rx="8" fill="url(#gradient)" />
-                        <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" fill="white" opacity="0.9" />
-                        <defs>
-                            <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
-                                <stop offset="0%" stop-color="#667eea" />
-                                <stop offset="100%" stop-color="#764ba2" />
-                            </linearGradient>
-                        </defs>
+                    <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Mouse body -->
+                        <rect x="2" y="2" width="20" height="30" rx="10" fill="#1a3a52" stroke="#d97706"
+                            stroke-width="2" />
+                        <!-- Mouse scroll wheel -->
+                        <rect x="10" y="8" width="4" height="8" rx="2" fill="#d97706" />
+                        <!-- Bottom detail -->
+                        <path d="M12 28C12 28 8 26 8 22M12 28C12 28 16 26 16 22" stroke="#d97706" stroke-width="1.5"
+                            stroke-linecap="round" />
                     </svg>
                     <span class="logo-text">Ironcreed</span>
                 </div>
@@ -50,140 +50,132 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Building the Future of Software</h1>
-                <p class="hero-subtitle">Innovative applications designed to simplify your digital life and boost
-                    productivity</p>
+                <p class="hero-subtitle">Custom websites, desktop tools, automation scripts, and email solutions for
+                    small businesses. Simple, practical software that works—without the enterprise price tag or
+                    complexity.</p>
                 <div class="hero-buttons">
                     <a href="#apps" class="btn btn-primary">Explore Our Apps</a>
                     <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-card card-1"></div>
-                <div class="floating-card card-2"></div>
-                <div class="floating-card card-3"></div>
+                <div class="pixel pixel-1"></div>
+                <div class="pixel pixel-2"></div>
+                <div class="pixel pixel-3"></div>
+                <div class="pixel pixel-4"></div>
+                <div class="pixel pixel-5"></div>
+                <div class="pixel pixel-6"></div>
+                <div class="pixel pixel-7"></div>
+                <div class="pixel pixel-8"></div>
             </div>
         </div>
     </section>
 
     <!-- Apps Section -->
     <section id="apps" class="apps-section">
+        <div class="pixel-container">
+            <div class="pixel pixel-small"></div>
+            <div class="pixel pixel-medium"></div>
+            <div class="pixel pixel-tiny"></div>
+            <div class="pixel pixel-large"></div>
+        </div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Our Applications</h2>
-                <p class="section-subtitle">Powerful tools crafted with passion and precision</p>
+                <h2 class="section-title">What We Do</h2>
+                <p class="section-subtitle">Practical software solutions for small businesses and individuals</p>
             </div>
-            <div class="apps-grid">
-                <!-- App Card 1 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect width="48" height="48" rx="12" fill="#667eea" />
-                            <path d="M24 14L16 18V30L24 34L32 30V18L24 14Z" stroke="white" stroke-width="2"
-                                fill="none" />
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-number">01</div>
+                    <div class="service-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <rect width="56" height="56" rx="8" fill="#1a3a52" />
+                            <path d="M20 18H36M20 28H36M20 38H28" stroke="#d97706" stroke-width="3"
+                                stroke-linecap="round" />
                         </svg>
                     </div>
-                    <h3 class="app-title">App Name One</h3>
-                    <p class="app-description">A powerful productivity tool designed to streamline your workflow and
-                        enhance team collaboration.</p>
-                    <div class="app-tags">
-                        <span class="tag">Productivity</span>
-                        <span class="tag">Desktop</span>
-                    </div>
-                    <a href="#" class="app-link">Learn More →</a>
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-description">Simple, professional websites for your business or personal brand.
+                        From a single landing page to a multi-page site with forms and contact features—get online
+                        without the complexity.</p>
+                    <ul class="service-list">
+                        <li>Business landing pages</li>
+                        <li>Portfolio & personal websites</li>
+                        <li>Contact forms & email integration</li>
+                        <li>Domain setup & hosting assistance</li>
+                    </ul>
                 </div>
 
-                <!-- App Card 2 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect width="48" height="48" rx="12" fill="#f093fb" />
-                            <circle cx="24" cy="24" r="8" stroke="white" stroke-width="2" fill="none" />
-                            <circle cx="24" cy="24" r="3" fill="white" />
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-number">02</div>
+                    <div class="service-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <rect width="56" height="56" rx="8" fill="#1a3a52" />
+                            <circle cx="28" cy="28" r="12" stroke="#d97706" stroke-width="3" fill="none" />
+                            <path d="M28 16V20M28 36V40M40 28H36M20 28H16" stroke="#d97706" stroke-width="3"
+                                stroke-linecap="round" />
                         </svg>
                     </div>
-                    <h3 class="app-title">App Name Two</h3>
-                    <p class="app-description">An innovative solution that brings creativity and efficiency together in
-                        one seamless experience.</p>
-                    <div class="app-tags">
-                        <span class="tag">Creative</span>
-                        <span class="tag">Mobile</span>
-                    </div>
-                    <a href="#" class="app-link">Learn More →</a>
+                    <h3 class="service-title">Desktop Apps & Tools</h3>
+                    <p class="service-description">Custom desktop applications and utilities for Windows, Mac, or Linux.
+                        Whether you need a simple calculator, file organizer, or specialized tool for your workflow—I
+                        build what you need.</p>
+                    <ul class="service-list">
+                        <li>Windows desktop applications</li>
+                        <li>File management & organization tools</li>
+                        <li>Data entry & processing utilities</li>
+                        <li>Custom converters</li>
+                    </ul>
                 </div>
 
-                <!-- App Card 3 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect width="48" height="48" rx="12" fill="#4facfe" />
-                            <rect x="16" y="16" width="16" height="16" stroke="white" stroke-width="2" fill="none" />
-                            <path d="M20 24L22 26L28 20" stroke="white" stroke-width="2" />
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-number">03</div>
+                    <div class="service-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <rect width="56" height="56" rx="8" fill="#1a3a52" />
+                            <path d="M18 24L28 18L38 24M18 32L28 26L38 32" stroke="#d97706" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="18" cy="24" r="2" fill="#d97706" />
+                            <circle cx="28" cy="18" r="2" fill="#d97706" />
+                            <circle cx="38" cy="24" r="2" fill="#d97706" />
                         </svg>
                     </div>
-                    <h3 class="app-title">App Name Three</h3>
-                    <p class="app-description">Smart automation that saves time and reduces complexity in your daily
-                        digital tasks.</p>
-                    <div class="app-tags">
-                        <span class="tag">Automation</span>
-                        <span class="tag">Web</span>
-                    </div>
-                    <a href="#" class="app-link">Learn More →</a>
+                    <h3 class="service-title">Scripts & Automation</h3>
+                    <p class="service-description">Custom scripts to automate repetitive tasks and save you time. From
+                        batch file operations to automated reports, I can build simple scripts that handle the boring
+                        stuff for you.</p>
+                    <ul class="service-list">
+                        <li>File renaming & batch processing</li>
+                        <li>Excel/CSV data automation</li>
+                        <li>Scheduled tasks & reminders</li>
+                        <li>PDF generation & manipulation</li>
+                    </ul>
                 </div>
 
-                <!-- App Card 4 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect width="48" height="48" rx="12" fill="#43e97b" />
-                            <path d="M18 24L22 28L30 20" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-number">04</div>
+                    <div class="service-icon">
+                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+                            <rect width="56" height="56" rx="8" fill="#1a3a52" />
+                            <rect x="16" y="22" width="6" height="16" fill="#d97706" />
+                            <rect x="25" y="18" width="6" height="20" fill="#d97706" />
+                            <rect x="34" y="14" width="6" height="24" fill="#d97706" />
                         </svg>
                     </div>
-                    <h3 class="app-title">App Name Four</h3>
-                    <p class="app-description">Advanced analytics and insights to help you make data-driven decisions
-                        with confidence.</p>
-                    <div class="app-tags">
-                        <span class="tag">Analytics</span>
-                        <span class="tag">Cloud</span>
-                    </div>
-                    <a href="#" class="app-link">Learn More →</a>
-                </div>
-
-                <!-- App Card 5 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect width="48" height="48" rx="12" fill="#fa709a" />
-                            <path d="M24 16V32M16 24H32" stroke="white" stroke-width="2" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <h3 class="app-title">App Name Five</h3>
-                    <p class="app-description">A comprehensive platform for managing projects and keeping your team
-                        synchronized.</p>
-                    <div class="app-tags">
-                        <span class="tag">Management</span>
-                        <span class="tag">SaaS</span>
-                    </div>
-                    <a href="#" class="app-link">Learn More →</a>
-                </div>
-
-                <!-- App Card 6 -->
-                <div class="app-card">
-                    <div class="app-icon">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect width="48" height="48" rx="12" fill="#764ba2" />
-                            <path d="M24 14L30 20L24 26L18 20L24 14Z" stroke="white" stroke-width="2" fill="none" />
-                            <path d="M24 22L30 28L24 34L18 28L24 22Z" stroke="white" stroke-width="2" fill="none" />
-                        </svg>
-                    </div>
-                    <h3 class="app-title">App Name Six</h3>
-                    <p class="app-description">Next-generation security and privacy tools to protect your digital assets
-                        and information.</p>
-                    <div class="app-tags">
-                        <span class="tag">Security</span>
-                        <span class="tag">Enterprise</span>
-                    </div>
-                    <a href="#" class="app-link">Learn More →</a>
+                    <h3 class="service-title">Email & Communication Setup</h3>
+                    <p class="service-description">Professional email setup with your domain, contact forms that work,
+                        and automated email responses. Get reliable communication tools without the technical headaches.
+                    </p>
+                    <ul class="service-list">
+                        <li>Custom domain email setup (yourname@yourbusiness.com)</li>
+                        <li>Contact form integration & email routing</li>
+                        <li>Automated email responses & templates</li>
+                        <li>Newsletter signup & distribution setup</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -191,30 +183,23 @@
 
     <!-- About Section -->
     <section id="about" class="about-section">
+        <div class="pixel-container">
+            <div class="pixel pixel-large"></div>
+            <div class="pixel pixel-small"></div>
+            <div class="pixel pixel-tiny"></div>
+        </div>
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2 class="section-title">About Ironcreed</h2>
-                    <p class="about-paragraph">We are a passionate team dedicated to creating innovative software
-                        solutions that make a real difference in people's lives. Our mission is to build applications
-                        that combine beautiful design with powerful functionality.</p>
-                    <p class="about-paragraph">Every project we undertake is driven by our commitment to excellence,
-                        user-centric design, and cutting-edge technology. We believe in crafting software that not only
-                        meets but exceeds expectations.</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Apps Launched</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">50K+</div>
-                            <div class="stat-label">Active Users</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">98%</div>
-                            <div class="stat-label">Satisfaction Rate</div>
-                        </div>
-                    </div>
+                    <p class="about-paragraph">Ironcreed.net is a software business focused on creating websites, cloud
+                        storage solutions, and sellable products informed by computer science. We turn ideas and
+                        learnings into
+                        usable software and services.</p>
+                    <p class="about-paragraph">Our work ranges from single-page websites to scalable cloud storage,
+                        custom applications, data tools, and hands-on training. We emphasize practical outcomes,
+                        security,
+                        and quality — so your product delivers real value.</p>
                 </div>
                 <div class="about-visual">
                     <div class="about-image-placeholder">
@@ -224,16 +209,16 @@
                             <circle cx="200" cy="200" r="50" fill="url(#grad3)" />
                             <defs>
                                 <linearGradient id="grad1" x1="0" y1="0" x2="400" y2="400">
-                                    <stop offset="0%" stop-color="#667eea" />
-                                    <stop offset="100%" stop-color="#764ba2" />
+                                    <stop offset="0%" stop-color="#1a3a52" />
+                                    <stop offset="100%" stop-color="#2d3748" />
                                 </linearGradient>
                                 <linearGradient id="grad2" x1="0" y1="0" x2="400" y2="400">
-                                    <stop offset="0%" stop-color="#f093fb" />
-                                    <stop offset="100%" stop-color="#4facfe" />
+                                    <stop offset="0%" stop-color="#2d3748" />
+                                    <stop offset="100%" stop-color="#d97706" />
                                 </linearGradient>
                                 <linearGradient id="grad3" x1="0" y1="0" x2="400" y2="400">
-                                    <stop offset="0%" stop-color="#43e97b" />
-                                    <stop offset="100%" stop-color="#38f9d7" />
+                                    <stop offset="0%" stop-color="#d97706" />
+                                    <stop offset="100%" stop-color="#f59e0b" />
                                 </linearGradient>
                             </defs>
                         </svg>
@@ -245,6 +230,12 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
+        <div class="pixel-container">
+            <div class="pixel pixel-medium"></div>
+            <div class="pixel pixel-tiny"></div>
+            <div class="pixel pixel-small"></div>
+            <div class="pixel pixel-large"></div>
+        </div>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get in Touch</h2>
@@ -262,24 +253,9 @@
                         <textarea placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="contact-email-text">Or email us directly at <a
+                            href="mailto:contact@ironcreed.net">contact@ironcreed.net</a></p>
                 </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <h4>Email</h4>
-                        <p>hello@ironcreed.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🌐</div>
-                        <h4>Website</h4>
-                        <p>www.ironcreed.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">💬</div>
-                        <h4>Social</h4>
-                        <p>@ironcreed</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -290,15 +266,15 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="32" height="32" rx="8" fill="url(#gradient2)" />
-                            <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" fill="white" opacity="0.9" />
-                            <defs>
-                                <linearGradient id="gradient2" x1="0" y1="0" x2="32" y2="32">
-                                    <stop offset="0%" stop-color="#667eea" />
-                                    <stop offset="100%" stop-color="#764ba2" />
-                                </linearGradient>
-                            </defs>
+                        <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Mouse body -->
+                            <rect x="2" y="2" width="20" height="30" rx="10" fill="#1a3a52" stroke="#d97706"
+                                stroke-width="2" />
+                            <!-- Mouse scroll wheel -->
+                            <rect x="10" y="8" width="4" height="8" rx="2" fill="#d97706" />
+                            <!-- Bottom detail -->
+                            <path d="M12 28C12 28 8 26 8 22M12 28C12 28 16 26 16 22" stroke="#d97706" stroke-width="1.5"
+                                stroke-linecap="round" />
                         </svg>
                         <span class="logo-text">Ironcreed</span>
                     </div>
@@ -311,15 +287,6 @@
                         <li><a href="#apps">Apps</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Discord</a></li>
                     </ul>
                 </div>
             </div>
