@@ -56,7 +56,7 @@ contactForm.addEventListener('submit', async (e) => {
     }
 
     try {
-        const res = await fetch('/api/contact', {
+        const res = await fetch('https://us-central1-ironcreed-8fbbc.cloudfunctions.net/sendContactEmail', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ name, email, message })
